@@ -476,7 +476,7 @@ class CreateEditAccountRequest {
         if (phoneNumber == '') 'deleteProvider': ['phone'],
         if (validSince != null)
           'validSince': validSince!.millisecondsSinceEpoch ~/ 1000,
-        customAttributes!: customAttributes
+        'customAttributes': customAttributes
       };
 
   @override
